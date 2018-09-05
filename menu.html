@@ -12,7 +12,49 @@
 <script src="script.js"></script>
 <title>Save Food</title>
 </head>
+<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
+.dropdown {
+    position: middle;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+    
+    
 <body>
 <!-- Start of the header -->
 <header>
@@ -24,18 +66,65 @@
 <!-- Start of the navigation -->
 <div id="navigation">
     <ul>
-   <li class='active'><a href='main.html'>Venue</a></li>
-    <li class='active'><a href='menu.html'>Menu</a></li>
-    <li><a href='#'>Are you Joining</a></li>
+   <li class='active'><a href='venue.html'>Venue</a></li>
+    <li><a href='menu.html'>Menu</a></li>
+    <li><a href='areyoujoining.html'>Are you Joining</a></li>
         
     </ul>
 
 </div>
 <!-- Start of the main content -->
 <main>
-    <h3>
-    Below is the menu
+    <div>
+        <h3>
+    Below is the menu available for the specific dinner party
     </h3>
+        <p>Please click on the items for every category that
+        you would prefer to eat. Hmmm nice...</p>
+    
+    </div>
+
+<!-- Starters -->
+    <div class="starters">
+<div class="dropdown">
+  <button class="dropbtn">What Starter</button>
+  <div class="dropdown-content">
+    <a href="#">Kokkinisto</a>
+    <a href="#">Kokoretsi</a>
+    <a href="#">Flogeres</a>
+      <a href="#">Keftedakia</a>
+      
+  </div>
+</div>
+    </div>    
+        <br><br><br>
+    
+<!-- Salads -->
+    <div class="salads">
+<div class="dropdown">
+  <button class="dropbtn">Which Salad</button>
+  <div class="dropdown-content">
+    <a href="#">Greek Salad</a>
+    <a href="#">Italian Salad</a>
+    <a href="#">Vegetables</a>
+  </div>
+</div>
+    </div>
+
+    <br><br><br>
+<!-- Main Course -->
+<div class="main_course">
+    
+    <div class="dropdown">
+  <button class="dropbtn">Main Course</button>
+  <div class="dropdown-content">
+    <a href="#">Lemonato</a>
+    <a href="#">Arni Me Patates</a>
+    <a href="#">Kotopoulo</a>
+  </div>
+</div>
+</div>
+    
     
 </main>
     
